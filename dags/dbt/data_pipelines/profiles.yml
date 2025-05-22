@@ -1,0 +1,14 @@
+data_pipelines:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "lg06620.eu-central-1"               # e.g. abc12345.eu-central-1
+      user: "thinithi97"                     # e.g. vindula
+      password: "X6Xsg39BkgTi6J6"
+      role: "dbt_role"                     # optional, e.g. SYSADMIN
+      database: "dbt_db"             # e.g. ANALYTICS_DB
+      warehouse: "dbt_wh"           # e.g. COMPUTE_WH
+      schema: "dbt_schema"                 # e.g. dbt_vindula
+      threads: 1
+      client_session_keep_alive: false
